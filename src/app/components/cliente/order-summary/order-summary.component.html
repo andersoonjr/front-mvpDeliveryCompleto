@@ -1,0 +1,38 @@
+<mat-card class="summary-card">
+  <mat-card-header>
+    <mat-card-title>Resumo do Pedido</mat-card-title>
+  </mat-card-header>
+
+  <mat-card-content>
+    <div class="summary-content">
+      @for (item of summaryItems; track item.dishId) {
+        <div class="summary-item">
+          <div class="item-info">
+            <span>{{item.quantity}}x</span>
+            <span>{{item.dish.name}}</span>
+          </div>
+          <div class="item-actions">
+            <span>R$ {{item.total.toFixed(2)}}</span>
+            <button mat-icon-button color="warn" (click)="removeItem(item.dishId)">
+              <mat-icon>delete</mat-icon>
+            </button>
+          </div>
+        </div>
+      }
+
+      <div class="delivery-fee">
+        <div class="fee-info">
+          <span>Taxa de Entrega</span>
+          <span>R$ {{deliveryFee.toFixed(2)}}</span>
+        </div>
+      </div>
+
+      <div class="total-amount">
+        <div class="total-info">
+          <span>Total</span>
+          <span>R$ {{totalAmount.toFixed(2)}}</span>
+        </div>
+      </div>
+    </div>
+  </mat-card-content>
+</mat-card>

@@ -1,0 +1,33 @@
+<div class="client-page">
+  <div class="header-container">
+    <h1 class="main-title">
+      <mat-icon class="title-icon">restaurant_menu</mat-icon>
+      Faça Seu Pedido
+    </h1>
+    <p class="subtitle">Escolha seus pratos favoritos e aproveite!</p>
+  </div>
+
+  <div class="content-container">
+    <app-dish-carousel
+      (orderItemsChange)="updateOrderItems($event)">
+    </app-dish-carousel>
+
+    <app-order-summary
+      [orderItems]="selectedOrderItems"
+      (orderItemsChange)="updateOrderItems($event)">
+    </app-order-summary>
+
+    <app-order-form
+      [orderItems]="selectedOrderItems"
+      (orderCreated)="onOrderCreated($event)">
+    </app-order-form>
+  </div>
+
+  <button mat-fab
+          class="status-fab"
+          (click)="openOrderStatus()"
+          matTooltip="Acompanhar Pedido"
+          matTooltipPosition="left">
+    <mat-icon>local_shipping</mat-icon>
+  </button>
+</div>
