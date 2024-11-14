@@ -70,12 +70,20 @@ Interface unificada para monitoramento do serviço
 👥 Nossa Equipe
 Anderson
 Contribuiu significativamente para o desenvolvimento do front-end, criando uma interface intuitiva e responsiva. Embora sua participação no backend tenha sido limitada, seu foco em fornecer uma boa experiência ao usuário foi essencial.
+
+
 Carlos
 Atuou como PO, coordenando a equipe e garantindo que todos os aspectos técnicos do projeto estejam alinhados. Carlos supervisionou o desenvolvimento.
+
+
 Raissa
 Focou na estilização do front-end, garantindo que o design fosse atraente e consistente. Seu trabalho em design visual ajudou a criar uma interface que não apenas funciona bem, mas também é agradável aos olhos.
+
+
 Sandriely
 Destacou-se como a principal desenvolvedora do backend, criando uma arquitetura robusta e eficiente. Além de desenvolver o backend completo, Sandriely também contribuiu significativamente para o front-end e foi responsável pela integração entre as diferentes partes do aplicativo. Sua dedicação e habilidades técnicas foram fundamentais para o sucesso do projeto.
+
+
 🛠️ Tecnologias Utilizadas
 Frontend
 
